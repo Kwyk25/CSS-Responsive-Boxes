@@ -1,3 +1,40 @@
 body {
   background: blanchedalmond;
+  text-align: center;
 }
+
+.container{
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  justify-content: space-between;
+  
+}
+
+.a {
+  border: 1px solid rgb(10, 37, 5);
+  background-color: blueviolet;
+  flex-grow: 1;
+}
+
+.b {
+  border: 1px solid rgb(11, 3, 88);
+  background-color: aqua;
+  min-height: 60vh;
+  flex-grow: 5;
+}
+
+.c {
+  border: 1px solid rgb(158, 148, 1);
+  background-color: brown;
+  flex-grow: 1;
+}
+@media (min-width: 600px) {
+  .container {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .a{
+    width: 100%;
+  }
+}  
