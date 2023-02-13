@@ -1,3 +1,89 @@
 body {
   background: peachpuff;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.a, .b, .c, .d, .e, .f, .g, .h{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+  border: 3px solid black;
+}
+
+.b, .c, .d, .e, .f, .g{
+  width: calc((100%/3) - (3rem / 3));
+}
+
+.a {
+  background-color: rgb(51, 18, 197);
+  width: 100%;
+}
+
+.b {
+  background-color: rgb(28, 147, 177);
+  height: auto;
+}
+
+.c {
+  background-color: rgb(23, 124, 212);
+}
+
+.d {
+  background-color: rgb(28, 202, 165);
+}
+
+.e {
+  background-color: rgb(18, 202, 193);
+}
+
+.f {
+  background-color: rgb(118, 219, 24);
+}
+
+.g {
+  background-color: rgb(255, 0, 0);
+}
+
+.h {
+  background-color: rgb(178, 21, 184);
+  height: 300px;
+}
+.bcdefg {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.bcdefgh {
+  display: flex;
+  flex-direction: column;
+}
+
+
+@media only screen and (min-width: 600px) {
+  .a .b, .c, .d, .e, .f, .g, .h {
+    height: 200px;
+  }
+
+  .bcdefgh {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .bcdefg {
+    width: 75%;
+  }
+
+  .h {
+    width: 25%;
+    height: auto;
+  }
 }
